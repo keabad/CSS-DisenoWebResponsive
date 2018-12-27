@@ -1,0 +1,70 @@
+.main-container {
+	background:  #82c3a6;
+}
+.main-figure {
+	margin: 0.3rem 0.5rem 0 0.5rem;
+}
+.main-image {
+	border-radius: 5px;
+}
+.photos {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+	justify-content: space-between;
+}
+.photos-background {
+	background: #1d1c1c;
+}
+.photos figure img {
+	border: 1px solid #a9a9a9;
+}
+.photos h4 {
+	color:  #EAE6E6;
+	margin-bottom: .5em;
+	text-align: center;
+}
+
+.photos-imageLandscape:hover{
+	border: 2px dotted #a9a9a9;
+	box-shadow: 2px 1px 2px #a9a9a9;
+	width: 90%;
+	-webkit-transition: all 1s;
+	   -moz-transition: all 1s;
+	    -ms-transition: all 1s;
+	     -o-transition: all 1s;
+	        transition: all 1s;
+	-webkit-transform: rotate(10deg);
+	   -moz-transform: rotate(10deg);
+	    -ms-transform: rotate(10deg);
+	     -o-transform: rotate(10deg);
+	        transform: rotate(10deg);
+}
+
+.photos-imagePortrait:hover {
+	border: 2px dotted #a9a9a9;
+	box-shadow: 2px 1px 2px #a9a9a9;
+	
+
+	-webkit-transition: all .5s;
+	   -moz-transition: all .5s;
+	    -ms-transition: all .5s;
+	     -o-transition: all .5s;
+	        transition: all .5s;
+
+	-webkit-transform: translate(20px, -5px);
+	   -moz-transform: translate(20px, -5px);
+	    -ms-transform: translate(20px, -5px);
+	     -o-transform: translate(20px, -5px);
+	        transform: translate(20px, -5px);
+
+}
+@media screen and (max-width: 992px) {
+	.main-figure {
+		margin:  0;
+		padding: 1em 0;
+	}
+	.photos {		
+		flex-wrap: wrap;
+	}
+}
